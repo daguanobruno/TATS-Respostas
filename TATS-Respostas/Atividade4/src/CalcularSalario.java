@@ -9,7 +9,7 @@ public class CalcularSalario {
         Funcionario f = new Funcionario();
         double salarioFinal = 0;
         
-        if(cargo.equals("DESENVOLVEDOR")){
+        if(cargo.equalsIgnoreCase("DESENVOLVEDOR")){
             if(salario < 3000){
                 salarioFinal = salario * 0.1;
                 salario = salario - salarioFinal;
@@ -20,7 +20,7 @@ public class CalcularSalario {
             }
         }
         
-        else if(cargo.equals("TESTADOR")){
+        else if(cargo.equalsIgnoreCase("TESTADOR")){
             if(salario < 2000){
                 salarioFinal = salario * 0.15;
                 salario = salario - salarioFinal;
@@ -42,7 +42,7 @@ public class CalcularSalario {
             }
         }
         
-        else if (cargo.equals("GERENTE")){
+        else if (cargo.equalsIgnoreCase("GERENTE")){
             if(salario < 5000){
                 salarioFinal = salario * 0.2;
                 salario = salario - salarioFinal;

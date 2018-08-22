@@ -18,16 +18,16 @@ public class Funcionario {
     
     public String verificarCargo(String cargo){
         
-        if(cargo.equals("DESENVOLVEDOR")){
+        if(cargo.equalsIgnoreCase("DESENVOLVEDOR")){
             cargo = "Cargo Aceito";
         }
-        else if(cargo.equals("TESTADOR")){
+        else if(cargo.equalsIgnoreCase("TESTADOR")){
             cargo = "Cargo Aceito";
         }
         else if(cargo.equalsIgnoreCase("DBA")){
             cargo = "Cargo Aceito";
         }
-        else if(cargo.equals("GERENTE")){
+        else if(cargo.equalsIgnoreCase("GERENTE")){
             cargo = "Cargo Aceito";
         }
         else{
