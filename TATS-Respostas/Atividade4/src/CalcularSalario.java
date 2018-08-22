@@ -23,6 +23,7 @@ public class CalcularSalario {
         else if(cargo.equals("TESTADOR")){
             if(salario < 2000){
                 salarioFinal = salario * 0.15;
+                
             }
             else{
                 salarioFinal = salario * 0.25;
