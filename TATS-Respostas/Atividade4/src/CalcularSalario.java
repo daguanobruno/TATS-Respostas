@@ -54,7 +54,7 @@ public class CalcularSalario {
         }
         
         else{
-            return Double.toString(salario);
+            return "Cargo Invalido!";
         }
         
         return Double.toString(salario);
