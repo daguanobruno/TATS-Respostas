@@ -21,8 +21,11 @@ public class CalcularSalarioTest {
         f.setCargo("DESENVOLVEDOR");
         f.setSalarioBase(5000);
         
+        String erro = f.verificarCargo("DESEN0VOLVEDOR");
         String resposta = c.calcular("DESENVOLVEDOR", 5000);
         
+        
+        assertEquals("Cargo não aceito", erro);
         assertEquals("4000.0", resposta);
     }
     
@@ -35,7 +38,9 @@ public class CalcularSalarioTest {
         f.setSalarioBase(5000);
         
         String resposta = c.calcular(f.getCargo(), 5000);
+        String erro = f.verificarCargo("TESTADOR");
         
+        assertEquals("Cargo Aceito", erro);
         assertEquals("3750.0", resposta);
         
     }

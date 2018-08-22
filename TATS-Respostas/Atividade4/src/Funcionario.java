@@ -19,19 +19,19 @@ public class Funcionario {
     public String verificarCargo(String cargo){
         
         if(cargo.equals("DESENVOLVEDOR")){
-            cargo = "DESENVOLVEDOR";
+            cargo = "Cargo Aceito";
         }
-        else if(cargo.equals("TESTEDOR")){
-            cargo = "TESTADOR";
+        else if(cargo.equals("TESTADOR")){
+            cargo = "Cargo Aceito";
         }
         else if(cargo.equals("DBA")){
-            cargo = "DBA";
+            cargo = "Cargo Aceito";
         }
         else if(cargo.equals("GERENTE")){
-            cargo = "GERENTE";
+            cargo = "Cargo Aceito";
         }
         else{
-            cargo = "Nome não aceito";
+            cargo = "Cargo não aceito";
         }
         
         return cargo;
