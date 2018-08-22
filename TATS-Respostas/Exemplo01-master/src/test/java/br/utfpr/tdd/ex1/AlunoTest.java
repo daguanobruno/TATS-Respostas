@@ -66,7 +66,7 @@ public class AlunoTest {
         aluno.setNotaProjeto(5.0);
         aluno.setNotaRAA(6.0);
         
-        assertEquals(5.2 / 3.0, aluno.getNF(), 0.01);
+        assertEquals(5.2, aluno.getNF(), 0.01);
     }        
     
     @Test
