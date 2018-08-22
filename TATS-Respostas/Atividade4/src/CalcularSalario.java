@@ -3,27 +3,26 @@ public class CalcularSalario {
 
     Funcionario f = new Funcionario();
 
-    String MensagemErro = "";
+    String MensagemErro = "Calculo Aceito";
 
-    public void calcular(String cargo) {
+    public void calcular(String cargo, float salario) {
 
-        float salario = 0;
 
-        if (f.getCargo().equals("DESENVOLVEDOR") && f.getSalarioBase() < 3000) {
+        if (cargo.equals("DESENVOLVEDOR") && salario < 3000) {
             salario = (float) (f.getSalarioBase() * 0.2);
-        } else if (f.getCargo().equals("DESENVOLVEDOR") && f.getSalarioBase() >= 3000) {
+        } else if (cargo.equals("DESENVOLVEDOR") && salario >= 3000) {
             salario = (float) (f.getSalarioBase() * 0.2);
-        } else if (f.getCargo().equals("DBA") && f.getSalarioBase() < 2000) {
+        } else if (cargo.equals("DBA") && salario < 2000) {
             salario = (float) (f.getSalarioBase() * 0.15);
-        } else if (f.getCargo().equals("DBA") && f.getSalarioBase() >= 2000) {
+        } else if (cargo.equals("DBA") && salario >= 2000) {
             salario = (float) (f.getSalarioBase() * 0.25);
-        } else if (f.getCargo().equals("TESTADOR") && f.getSalarioBase() < 2000) {
+        } else if (cargo.equals("TESTADOR") && salario < 2000) {
             salario = (float) (f.getSalarioBase() * 0.15);
-        } else if (f.getCargo().equals("TESTADOR") && f.getSalarioBase() >= 2000) {
+        } else if (cargo.equals("TESTADOR") && salario >= 2000) {
             salario = (float) (f.getSalarioBase() * 0.25);
-        } else if (f.getCargo().equals("GERENTE") && f.getSalarioBase() < 5000) {
+        } else if (cargo.equals("GERENTE") && salario < 5000) {
             salario = (float) (f.getSalarioBase() * 0.2);
-        } else if (f.getCargo().equals("GERENTE") && f.getSalarioBase() >= 5000) {
+        } else if (cargo.equals("GERENTE") && salario >= 5000) {
             salario = (float) (f.getSalarioBase() * 0.3);
         } else {
             MensagemErro = "Dado Invalido";
