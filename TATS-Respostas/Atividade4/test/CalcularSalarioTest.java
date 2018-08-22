@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -11,10 +7,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author Usuario
- */
+
 public class CalcularSalarioTest {
     
     public CalcularSalarioTest() {
@@ -26,11 +19,13 @@ public class CalcularSalarioTest {
         Funcionario f = new Funcionario();
         
         f.setCargo("DESENVOLVEDOR");
-        f.setSalarioBase(3000);
+        f.setSalarioBase(5000);
         
-        c.calcular(f.getCargo(), f.getSalarioBase());
+        String mensagem = c.calcular("DESENVOLVEDOR", 5000);
         
-        assertEquals("Calculo Aceito", c.MensagemErro);
+        assertEquals("Calculo Aceito", c.MensagemErro(mensagem));
+    
+    
     }
 
  
