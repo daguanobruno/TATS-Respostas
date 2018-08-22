@@ -1,0 +1,36 @@
+O que é o teste de software? Qual a melhor definição?
+
+Teste de software é um mecanismo utilizado para avaliar e validar um determinado sistema.
+
+- O que é teste de unidade, integração e sistema?
+
+Teste de unidade é um teste que verifica apenas uma unidade do sistema.
+Teste de integração é um teste que verifica a integração de duas partes do sistema.
+Teste de sistema é um teste que verifica um sistema por completo.
+
+- O que é um caso de teste? Dê exemplos.
+
+Caso de teste são condições usadas para teste de software. Ele identifica defeitos na estrutura interna do software por meio de situações que exercitem adequadamente todas as estruturas utilizadas na codificação
+
+- Qual a diferença entre um teste manual e um teste automatizado?
+
+Teste manual é um teste em que o testador testa o sistema manualmente, sem o auxilio de uma ferramenta.
+Teste automatizado é um teste para controlar a execução do teste de software,
+
+- Explique a diferença entre o teste caixa-branca e o teste caixa-preta.
+
+Utilizamos um teste de caixa branca quando conhecemos o código fonte do sistema a ser avaliado
+Utilizamos um teste de caixa preta quando não conhecemos o código fonte do sistema a ser avaliado
+
+- O que é um teste de regressão?
+
+O teste de regressão é uma técnica do teste de software que consiste na aplicação de versões mais recente do software, para garantir que não surgiram novos defeitos em componentes já analisados.
+
+- O que é um critério de teste? Cite exemplos.
+
+São um conjunto de casos de teste;
+
+Particionamento de Equivalência;
+Grafo Causa-Efeito;
+Error-Guessing;
+
