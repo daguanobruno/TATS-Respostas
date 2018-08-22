@@ -31,7 +31,7 @@ public class CalcularSalario {
             }
         }
         
-        else if(cargo.equals("DBA")){
+        else if(cargo.equalsIgnoreCase("DBA")){
             if(salario < 2000){
                 salarioFinal = salario * 0.15;
                 salario = salario - salarioFinal;

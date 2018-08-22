@@ -54,7 +54,7 @@ public class CalcularSalarioTest {
         f.setCargo("Dba");
         f.setSalarioBase(3000);
         
-        String resposta = c.calcular(f.getCargo(), 5000);
+        String resposta = c.calcular(f.getCargo(), 3000);
         String erro = f.verificarCargo("Dba");
         
         assertEquals("Cargo Aceito", erro);

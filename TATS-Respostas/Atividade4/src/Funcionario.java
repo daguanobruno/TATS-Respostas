@@ -24,7 +24,7 @@ public class Funcionario {
         else if(cargo.equals("TESTADOR")){
             cargo = "Cargo Aceito";
         }
-        else if(cargo.equals("DBA")){
+        else if(cargo.equalsIgnoreCase("DBA")){
             cargo = "Cargo Aceito";
         }
         else if(cargo.equals("GERENTE")){
