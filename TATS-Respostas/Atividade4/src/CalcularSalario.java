@@ -23,28 +23,33 @@ public class CalcularSalario {
         else if(cargo.equals("TESTADOR")){
             if(salario < 2000){
                 salarioFinal = salario * 0.15;
-                
+                salario = salario - salarioFinal;
             }
             else{
                 salarioFinal = salario * 0.25;
+                salario = salario - salarioFinal;
             }
         }
         
         else if(cargo.equals("DBA")){
             if(salario < 2000){
                 salarioFinal = salario * 0.15;
+                salario = salario - salarioFinal;
             }
             else{
                 salarioFinal = salario * 0.25;
+                salario = salario - salarioFinal;
             }
         }
         
         else if (cargo.equals("GERENTE")){
             if(salario < 5000){
                 salarioFinal = salario * 0.2;
+                salario = salario - salarioFinal;
             }
             else{
                 salarioFinal = salario * 0.3;
+                salario = salario - salarioFinal;
             }
         }
         
