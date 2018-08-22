@@ -59,7 +59,23 @@ public class CalcularSalarioTest {
         
         assertEquals("Cargo Aceito", erro);
         assertEquals("2250.0", resposta);
+    }
     
+    @Test
+    public void TestComErro(){
+        
+        CalcularSalario c = new CalcularSalario();
+        Funcionario f = new Funcionario();
+        
+        f.setCargo("Professor");
+        f.setSalarioBase(2500);
+        
+        String resposta = c.calcular(f.getCargo(), f.getSalarioBase());
+        String erro = f.verificarCargo(f.getCargo());
+        
+        assertEquals("Cargo não aceito", erro);
+        assertEquals("Cargo Invalido!", resposta);
+        
     }
     
 }
