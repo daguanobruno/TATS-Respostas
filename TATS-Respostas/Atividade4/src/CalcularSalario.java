@@ -12,9 +12,11 @@ public class CalcularSalario {
         if(cargo.equals("DESENVOLVEDOR")){
             if(salario < 3000){
                 salarioFinal = salario * 0.1;
+                salario = salario - salarioFinal;
             }
             else{
                 salarioFinal = salario * 0.2;
+                salario = salario - salarioFinal;
             }
         }
         
@@ -46,12 +48,10 @@ public class CalcularSalario {
         }
         
         else{
-            return MensagemErro("Erro");
+            return Double.toString(salario);
         }
         
-        
-        return MensagemErro("Calculo Aceito");
-        
+        return Double.toString(salario);
     }
     
       
@@ -60,5 +60,12 @@ public class CalcularSalario {
         String mensagemErro = "";
         
         return mensagemErro = mensagem;
+    }
+    
+    
+    public double SalarioFinal(double salarioFinal){
+        double salario;
+        
+        return salario = salarioFinal;
     }
 }

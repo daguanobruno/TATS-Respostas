@@ -21,12 +21,10 @@ public class CalcularSalarioTest {
         f.setCargo("DESENVOLVEDOR");
         f.setSalarioBase(5000);
         
-        String mensagem = c.calcular("DESENVOLVEDOR", 5000);
+        double saida = 4000;
         
-        assertEquals("Calculo Aceito", c.MensagemErro(mensagem));
-    
-    
+        String resposta = c.calcular("DESENVOLVEDOR", 5000);
+        
+        assertEquals("4000.0", resposta);
     }
-
- 
 }
