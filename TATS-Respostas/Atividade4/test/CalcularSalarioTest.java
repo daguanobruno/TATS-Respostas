@@ -43,5 +43,24 @@ public class CalcularSalarioTest {
         assertEquals("Cargo Aceito", erro);
         assertEquals("3750.0", resposta);
         
+    }    
+    
+
+    @Test
+    public void TestDBA(){
+        CalcularSalario c = new CalcularSalario();
+        Funcionario f = new Funcionario();
+        
+        f.setCargo("Dba");
+        f.setSalarioBase(3000);
+        
+        String resposta = c.calcular(f.getCargo(), 5000);
+        String erro = f.verificarCargo("Dba");
+        
+        assertEquals("Cargo Aceito", erro);
+        assertEquals("2250.0", resposta);
+    
     }
+    
 }
+
