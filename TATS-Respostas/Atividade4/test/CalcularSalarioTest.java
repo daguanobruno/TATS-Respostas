@@ -22,8 +22,7 @@ public class CalcularSalarioTest {
         f.setSalarioBase(5000);
         
         String erro = f.verificarCargo("DESEN0VOLVEDOR");
-        String resposta = c.calcular("DESENVOLVEDOR", 5000);
-        
+        String resposta = c.calcular(f.getCargo(), f.getSalarioBase());
         
         assertEquals("Cargo não aceito", erro);
         assertEquals("4000.0", resposta);
@@ -37,12 +36,11 @@ public class CalcularSalarioTest {
         f.setCargo("TESTADOR");
         f.setSalarioBase(5000);
         
-        String resposta = c.calcular(f.getCargo(), 5000);
-        String erro = f.verificarCargo("TESTADOR");
+        String resposta = c.calcular(f.getCargo(), f.getSalarioBase());
+        String erro = f.verificarCargo(f.getCargo());
         
         assertEquals("Cargo Aceito", erro);
         assertEquals("3750.0", resposta);
-        
     }    
     
 
@@ -54,8 +52,8 @@ public class CalcularSalarioTest {
         f.setCargo("Dba");
         f.setSalarioBase(3000);
         
-        String resposta = c.calcular(f.getCargo(), 3000);
-        String erro = f.verificarCargo("Dba");
+        String resposta = c.calcular(f.getCargo(), f.getSalarioBase());
+        String erro = f.verificarCargo(f.getCargo());
         
         assertEquals("Cargo Aceito", erro);
         assertEquals("2250.0", resposta);
@@ -75,8 +73,21 @@ public class CalcularSalarioTest {
         
         assertEquals("Cargo não aceito", erro);
         assertEquals("Cargo Invalido!", resposta);
-        
     }
     
+      @Test
+    public void TestGerente(){
+        CalcularSalario c = new CalcularSalario();
+        Funcionario f = new Funcionario();
+        
+        f.setCargo("Gerente");
+        f.setSalarioBase(2500);
+        
+        String resposta = c.calcular(f.getCargo(), f.getSalarioBase());
+        String erro = f.verificarCargo(f.getCargo());
+        
+        assertEquals("Cargo Aceito", erro);
+        assertEquals("2000.0", resposta);
+    }
 }
 

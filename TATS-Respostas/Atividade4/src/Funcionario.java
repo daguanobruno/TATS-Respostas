@@ -1,8 +1,8 @@
 
 public class Funcionario {
     
-    String nome, email, cargo, mensagemErro;
-    double salarioBase;
+    private String nome, email, cargo, mensagemErro;
+    private double salarioBase;
 
     public Funcionario() {
     }

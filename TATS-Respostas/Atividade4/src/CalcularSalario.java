@@ -59,16 +59,7 @@ public class CalcularSalario {
         
         return Double.toString(salario);
     }
-    
       
-    public String MensagemErro(String mensagem){
-        
-        String mensagemErro = "";
-        
-        return mensagemErro = mensagem;
-    }
-    
-    
     public double SalarioFinal(double salarioFinal){
         double salario;
         
